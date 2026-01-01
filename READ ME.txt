@@ -1,0 +1,9 @@
+Armada released the Emergency Shut Down Tool publicly for Orcus, which means that trolls
+and anyone who knows your IP address can cripple your operational server. I have created
+a point of concept that prevents the tool from shuting down your server, encrypting your
+database, and removing all clients connected to your server. I believe that it was a bad
+move to release the tool to the public as it's essentially a backdoor to any internet
+facing Orcus server, it's too powerful to be giving out to anyone. If you want to figure
+out how to modify the Orcus server yourself you'll need to unpack the Costura Fody
+embedded assembly Orcus.Server.Core.dll within the Orcus server resources, in there you'll
+find the authentication for the Emergency Shutdown. 
